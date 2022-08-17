@@ -1,20 +1,20 @@
 ---
-alias: "Front door closed notification"
-id: '1660659475650'
+alias: "Front door opened notification"
+id: '1660659401400'
 description: >-
-  Notifies when the front door has been closed.
+  Notifies when the front door has been opened.
 trigger:
   - platform: state
     entity_id:
     - binary_sensor.front_door
-    from: 'on'
-    to: 'off'
+    from: 'off'
+    to: 'on'
 condition: []
 action:
   - service: notify.mobile_app_ledena_sumica_2_0
     data:
-        message: Front door was closed
+        message: Front door was opened
   - service: notify.mobile_app_aleksandras_iphone
     data:
-        message: Front door was closed
+        message: Front door was opened
 mode: single
