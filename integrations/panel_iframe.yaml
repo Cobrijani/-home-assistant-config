@@ -1,0 +1,5 @@
+panel_iframe:
+  portainer:
+    title: "Portainer"
+    icon: "mdi:docker"
+    url: "https://portainer.cobrijani.eu"

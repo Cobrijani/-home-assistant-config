@@ -1,0 +1,12 @@
+front_door_opened:
+  name: Front Door is opened
+  message: Front door is opened. Close it!
+  done_message: Front door is closed
+  entity_id: binary_sensor.front_door
+  state: "on"
+  repeat: 2 # This will repeat every 2 minutes
+  can_acknowledge: false
+  skip_first: False
+  notifiers:
+    - mobile_app_stefans_iphone
+    - mobile_app_stefans_ipad

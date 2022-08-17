@@ -1,0 +1,46 @@
+# Example .gitignore file for your config dir.
+# An * ensures that everything will be ignored.
+# Generic ignores
+*.log
+*.log.*
+*.db
+*.db-shm
+*.db-wal
+*.pyc
+._*
+__pycache__
+
+# Ignore files created by IDE's
+.vscode
+.theia
+.Trash*
+
+# Directory (contents) ignores
+.cloud
+.storage
+deps
+
+# Specific file ignores
+core
+image
+ip_bans.yaml
+secrets.yaml
+
+# Build-in blueprints ignores
+blueprints/*/homeassistant
+
+# Ignore folders.
+.cache
+.config
+.storage
+backups
+custom-cont-init.d
+custom-services.d
+.cloud
+.google.token
+deps
+
+# Ensure these YAML files are ignored, otherwise your secret data/credentials will leak.
+ip_bans.yaml
+secrets.yaml
+known_devices.yaml

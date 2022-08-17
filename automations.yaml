@@ -1,0 +1,21 @@
+- id: '1659124214388'
+  alias: Automated Daily Snapshot
+  description: ''
+  use_blueprint:
+    path: vorion/create-automated-backups-every-day.yaml
+    input:
+      send_notification: true
+      notify_device: 01b1a853526e8e0bbebc07641452aabe
+      trigger_time: '12:00:00'
+- id: '1660236639901'
+  alias: Low battery level detection & notification for all battery sensors
+  description: ''
+  use_blueprint:
+    path: sbyx/low-battery-level-detection-notification-for-all-battery-sensors.yaml
+    input:
+      actions:
+      - device_id: bfa77c3162ec6c591cc2aaf4407291d2
+        domain: mobile_app
+        type: notify
+        message: Battery low for {{sensors}}
+        title: '{{sensors}} Battery low'

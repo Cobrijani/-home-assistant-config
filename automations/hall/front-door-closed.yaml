@@ -1,0 +1,24 @@
+---
+alias: "Front door closed notification"
+id: '1660659475650'
+description: >-
+  Notifies when the front door has been closed.
+trigger:
+  - platform: state
+    entity_id:
+    - binary_sensor.front_door
+    from: 'on'
+    to: 'off'
+condition: []
+action:
+  - device_id: bfa77c3162ec6c591cc2aaf4407291d2
+    domain: mobile_app
+    type: notify
+    message: Front door was closed
+    title: Front door closed
+  - device_id: 6eef301d86f27cab07a69158b51cda45
+    domain: mobile_app
+    type: notify
+    message: Front door was closed
+    title: Front door closed
+mode: single

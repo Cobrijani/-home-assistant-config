@@ -1,0 +1,8 @@
+---
+# Add support for alerts
+#
+# https://www.home-assistant.io/integrations/alert
+#
+
+# This include is for the scene editor/UI
+alert: !include ../alerts.yaml
