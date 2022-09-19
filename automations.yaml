@@ -19,3 +19,18 @@
         type: notify
         message: Battery low for {{sensors}}
         title: '{{sensors}} Battery low'
+- id: '1661553838648'
+  alias: Start ac
+  description: ''
+  trigger:
+  - platform: time
+    at: 08:30:00
+  condition: []
+  action:
+  - service: climate.set_temperature
+    data:
+      temperature: 28
+      hvac_mode: cool
+    target:
+      device_id: 817cdba39fd08f8157147f1d399cf090
+  mode: single
