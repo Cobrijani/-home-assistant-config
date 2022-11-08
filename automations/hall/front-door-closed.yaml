@@ -11,10 +11,10 @@ trigger:
     to: 'off'
 condition: []
 action:
-  - service: notify.mobile_app_iphone
+  - service: notify.mobile_app_ledena_sumica_2_0_3
     data:
         message: Front door was closed
   - service: notify.mobile_app_aleksandras_iphone
     data:
         message: Front door was closed
-mode: queued
+mode: parallel
