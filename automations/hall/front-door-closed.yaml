@@ -11,7 +11,7 @@ trigger:
     to: 'off'
 condition: []
 action:
-  - service: notify.mobile_app_ledena_sumica_2_0_3
+  - service: notify.mobile_app_cobra_13
     data:
         message: Front door was closed
   - service: notify.mobile_app_aleksandras_iphone
